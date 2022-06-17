@@ -3,10 +3,23 @@
 
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/SDWebImagePrefetcher.h>
+#import "SDImageSVGCoder.h""
 
 @implementation FFFastImageViewManager
 
 RCT_EXPORT_MODULE(FastImageView)
+
+- (instancetype)init
+{
+  self = [super init];
+
+  if (@available(iOS 13.0, *)) {
+    SDImageSVGCoder *SVGCoder = [SDImageSVGCoder sharedCoder];
+    [[SDImageCodersManager sharedManager] addCoder:SVGCoder];
+  }
+
+  return self;
+}
 
 - (FFFastImageView*)view {
   return [[FFFastImageView alloc] init];
