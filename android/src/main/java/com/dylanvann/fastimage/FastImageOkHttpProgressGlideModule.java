@@ -35,7 +35,7 @@ import okio.Source;
 @GlideModule
 public class FastImageOkHttpProgressGlideModule extends LibraryGlideModule {
 
-    private static DispatchingProgressListener progressListener = new DispatchingProgressListener();
+    private static final DispatchingProgressListener progressListener = new DispatchingProgressListener();
 
     @Override
     public void registerComponents(

@@ -2826,9 +2826,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-native@npm:^0.64.12":
-  version: 0.64.12
-  resolution: "@types/react-native@npm:0.64.12"
+"@types/react-native@^0.69.5":
+  version "0.69.5"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.69.5.tgz#7709fdbff031a5ecf1956705e6c4a07cdfe6867c"
+  integrity sha512-mSUCuGUsW2kJlZiu4GmdYVDKZX/52iyC9rm6dxAmflJj1b7kSO/CMSDy5WbcfS8QerxTqbYGTrIwHD0GnXHzbQ==
   dependencies:
     "@types/react": "*"
   checksum: 63f73b324a39cb2bbff4ba3788d78b556bace33f53dc4d3faa2608552ae50b7675eb8b24504e3c566ce3c73a9282d722c2f5fb6345c709d846b72618d76a5fc5
@@ -9816,11 +9817,11 @@ __metadata:
   version: 1.0.1
   resolution: "minipass-json-stream@npm:1.0.1"
   dependencies:
-    jsonparse: ^1.3.1
-    minipass: ^3.0.0
-  checksum: 791b696a27d1074c4c08dab1bf5a9f3201145c2933e428f45d880467bce12c60de4703203d2928de4b162d0ae77b0bb4b55f96cb846645800aa0eb4919b3e796
-  languageName: node
-  linkType: hard
+    minipass "^3.1.0"
+    minipass-sized "^1.0.3"
+    minizlib "^2.0.0"
+  optionalDependencies:
+    encoding "^0.1.12"
 
 "minipass-pipeline@npm:^1.2.2, minipass-pipeline@npm:^1.2.4":
   version: 1.2.4
